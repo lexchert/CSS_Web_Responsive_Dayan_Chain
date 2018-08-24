@@ -1,0 +1,161 @@
+body
+{
+	background-color: #02010a;
+	color: white;
+	font-family: 'Dancing Script', cursive;
+}
+
+#contenido {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#cabecera {
+	background-color: #5b7989;
+	color: white;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+#cabecera div
+{
+	width: 46%;
+	float: left;
+	padding: 2%;
+}
+
+#titulo {
+	text-shadow: 1px 2px 4px #02010a;
+}
+#menu {
+	text-align: right;
+}
+#menu nav a {
+	color: white;
+	font-weight: bold;
+}
+
+#menu nav a.activo{
+	text-decoration: none;
+}
+
+#bloque1 {
+	width: 94%;
+	padding: 3%;
+	background-color: #82c3a6;
+}
+
+#bloque1 img{
+	margin: 0 auto;
+}
+
+section img {
+	width: 100%;
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+#bloque2 {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	background: #d5c75f;
+	clear: both;
+}
+
+#bloque2 .imagen {
+	width: 44%;
+	padding: 3%;
+	float: left;
+	text-align: center;
+}
+
+#bloque2 .galeria {
+	width: 30.3%;
+	padding: 1.5%;
+	float: left;
+	text-align: center;
+}
+
+#img-paisajes {
+	transition: 1s;
+}
+
+#img-paisajes:hover {
+	transform: rotateZ(10deg);
+	border: solid 2px #82c3a6;
+	box-shadow: 2px 2px 5px #82c3a6;
+}
+
+#img-retratos {
+	transition: 1s;
+}
+
+#img-retratos:hover {
+	transform: translate(20px, -5px);
+	border: solid 2px #82c3a6;
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+
+footer {
+	width: 100%;
+	background: #C6d5c5;
+	display: flex;
+	flex-flow: row wrap;
+	color: black;
+	border-radius: 0 0 10px 10px;
+}
+
+footer div {
+	width: 25%;
+}
+
+.info {
+	width: 100%;
+	padding: 20px;
+	clear: both;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*Efectos imágenes**/
+.blur {
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+}
+
+.greyscale {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+.sepia {
+	filter: sepia(90%);
+	-webkit-filter: sepia(90%);
+}
+
+
+@media all and (max-width: 899px) {
+	.contenido{
+		width: 90%;
+	}
+	#cabecera div {
+		width: 96%;
+		text-align: center;
+		padding: 2%;
+	}
+	#bloque2 .imagen {
+		width: 100%;
+	}
+	#bloque2 .galeria {
+		width: 94%;
+		padding: 3%;
+	}
+	footer div {
+		width: 100%;
+	}
+	
+}
